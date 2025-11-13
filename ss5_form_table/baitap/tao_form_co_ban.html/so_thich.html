@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở thích của bạn</title>
+    <style>
+        body {
+            background-color: #e0ffff;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 0;
+        }
+        form {
+            background-color: white;
+            border: 8px solid #b2ebf2;
+            width: 500px;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+        label {
+            color: blue;
+            font-weight: bold;
+        }
+        .hobby label {
+            color: orangered;
+            font-weight: normal;
+            margin-right: 20px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 300px;
+            margin: 5px 0;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: #dcdcdc;
+            padding: 5px 15px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h2>SỞ THÍCH CỦA BẠN</h2>
+    <label>Họ và tên</label>
+    <input type="text" name="yourname"><br>
+
+    <label>Email</label>
+    <input type="email" name="email"><br>
+
+    <label>Sở thích</label><br>
+    <div class="hobby">
+        <input type="checkbox" name="hobby" value="thethao"><label>Thể thao</label>
+        <input type="checkbox" name="hobby" value="amnhac"><label>Âm nhạc</label>
+        <input type="checkbox" name="hobby" value="docsach"><label>Đọc sách</label><br>
+        <input type="checkbox" name="hobby" value="luotweb"><label>Lướt web</label>
+        <input type="checkbox" name="hobby" value="choigame"><label>Chơi game</label>
+        <input type="checkbox" name="hobby" value="dienanh"><label>Điện ảnh</label><br>
+        <input type="checkbox" name="hobby" value="dulich"><label>Du lịch</label>
+    </div>
+    <br>
+    <input type="submit" value="Gửi thông tin">
+    <input type="reset" value="Nhập lại">
+</form>
+</body>
+</html>
