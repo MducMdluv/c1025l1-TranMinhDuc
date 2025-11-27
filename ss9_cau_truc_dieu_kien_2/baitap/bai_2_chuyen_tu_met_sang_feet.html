@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ mét sang feet</title>
+</head>
+<body>
+<h1 style="background-color: #ff6b6b; text-align: center">Chuyển từ mét sang feet</h1>
+<input id="c" type="number" placeholder="Nhập mét">
+<button onclick="convert()">Convert</button>
+<p id="result"></p>
+<script>
+    function convert() {
+        let m = parseFloat(document.getElementById("c").value);
+        let ft = m * 3.2808
+        document.getElementById("result").innerHTML = "feet sau khi chuyển đổi là : " + ft;
+    }
+</script>
+</body>
+</html>
