@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+    <style>
+        span {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="result"></div>
+
+<script>
+    let output = "";
+
+    function fibonacci(count) {
+        count = Number(count);
+        if (count === 0) {
+            output += `<span>0</span>`;
+            return;
+        }
+        if (count === 1) {
+            output += `<span>0</span> <span>1</span>`;
+            return;
+        }
+
+        let prev = 0;
+        let curr = 1;
+
+        output += `<span>${prev}</span>`;
+        output += `<span>${curr}</span>`;
+
+
+        for (let i = 2; i < count; i++) {
+            let next = prev + curr;
+            output += `<span>${next}</span>`;
+            prev = curr;
+            curr = next;
+        }
+    }
+
+    let number = prompt("Nhập số lượng phần tử fibonacci:");
+    fibonacci(number);
+
+    document.getElementById("result").innerHTML = output;
+</script>
+</body>
+
+</html>

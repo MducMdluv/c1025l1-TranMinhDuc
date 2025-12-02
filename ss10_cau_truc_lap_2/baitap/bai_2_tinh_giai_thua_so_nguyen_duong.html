@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Demo</title>
+</head>
+
+<body>
+<script>
+    let inputNumber = prompt("Nhập vào một số để tính giai thừa:");
+
+    let result = 1;
+
+    inputNumber = Number(inputNumber);
+
+    for (let step = 1; step <= inputNumber; step++) {
+        result *= step;
+    }
+
+    alert(`Giai thừa của ${inputNumber} là: ${result}`);
+</script>
+</body>
+
+</html>

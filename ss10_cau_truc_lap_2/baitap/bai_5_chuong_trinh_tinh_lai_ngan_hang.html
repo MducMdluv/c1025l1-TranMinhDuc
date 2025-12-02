@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi theo tháng</title>
+</head>
+
+<body>
+<script>
+    const LAI_SUAT = 0.05;
+
+    let tienGoc = +prompt("Nhập số tiền ban đầu (triệu VND): ");
+    let soThang = +prompt("Nhập số tháng muốn tính: ");
+
+    for (let thang = 1; thang <= soThang; thang++) {
+        let tienTruoc = tienGoc;
+        tienGoc = tienGoc * (1 + LAI_SUAT);
+
+        alert(
+            `Tháng ${thang}: Tổng tiền = ${tienGoc.toFixed(3)} triệu\n` +
+            `Tiền lãi tháng này = ${(tienGoc - tienTruoc).toFixed(3)} triệu`
+        );
+    }
+</script>
+</body>
+
+</html>
+
+
